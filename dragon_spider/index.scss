@@ -4,6 +4,7 @@
 
 // base & layout
 @import 'base';
+@import "breakpoints";
 
 
 // colors
@@ -11,7 +12,7 @@
 
 
 //components (button, card, navbar)
-
+@import 'components/button';
 
 // utilities (margin, padding, opacity)
 @import 'utilities';

@@ -4,7 +4,7 @@ const purgecss = require('gulp-purgecss')
 const rename = require('gulp-rename');
 
 function buildStyles(){
-    return src('dragon_spider/**/*.scss')
+    return src('sass/**/*.scss')
         //compile css
         .pipe(sass())
         //rename output file
@@ -16,7 +16,7 @@ function buildStyles(){
 }
 
 function watchTask(){
-    watch(['dragon_spider/**/*.scss', '*.html'], buildStyles)
+    watch(['sass/**/*.scss', '*.html'], buildStyles)
 }
 
 exports.default = series(buildStyles, watchTask)
